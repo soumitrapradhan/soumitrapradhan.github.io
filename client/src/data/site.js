@@ -11,7 +11,7 @@ export const site = {
   email: "soumitrapradhan027@gmail.com",
   linkedin: "https://linkedin.com/in/soumitra-pradhan-b3b902372",
   // TODO: replace with your real GitHub profile URL
-  github: "https://github.com/your-username",
+  github: "https://github.com/soumitrapradhan",
   tryhackme: "https://tryhackme.com/p/Shadowsoumitra",
   credly: "https://www.credly.com/users/soumitra-pradhan.c813ef59",
   // Files inside client/public
