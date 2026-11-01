@@ -1,18 +1,23 @@
-// In development the Vite dev server talks to the backend on port 5000.
-// In production set VITE_API_URL (e.g. https://your-api.onrender.com) before building.
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const ACCESS_KEY = "8e76a8b3-0032-4f99-9c2c-429cb57a3797";
 
 export async function sendContact(payload) {
-  const res = await fetch(`${API_URL}/api/contact`, {
+  // Hidden trap field: if a bot filled it in, pretend success and send nothing
+  if (payload.website) return { ok: true };
+
+  const res = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
+    body: JSON.stringify({
+      access_key: ACCESS_KEY,
+      name: payload.name,
+      email: payload.email,
+      subject: `[Portfolio] ${payload.subject}`,
+      message: payload.message,
+    }),
   });
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) {
-    const err = new Error(data.message || "Something went wrong. Please try again.");
-    err.fields = data.errors || {};
-    throw err;
+  if (!res.ok || !data.success) {
+    throw new Error(data.message || "Something went wrong. Please try again.");
   }
   return data;
 }
