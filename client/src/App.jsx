@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import MatrixRain from "./components/MatrixRain.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
@@ -17,6 +18,7 @@ function ScrollToTop() {
 export default function App() {
   return (
     <>
+      <MatrixRain />
       <ScrollToTop />
       <Navbar />
       <main>
