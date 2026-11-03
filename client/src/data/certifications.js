@@ -7,7 +7,7 @@ export const certifications = [
     issuer: "Cisco Networking Academy",
     date: "Sep 2026",
     image: "",
-    verifyUrl: "",
+    verifyUrl: "https://www.credly.com/badges/3b3e8f5f-07e1-42b4-b1e2-16be82f3e813/public_url",
     note: "Verified Credly badge",
   },
   {
@@ -22,14 +22,14 @@ export const certifications = [
     issuer: "TryHackMe",
     date: "Jul 2026",
     image: "",
-    verifyUrl: "",
+    verifyUrl: "https://tryhackme.com/certificate/THM-NOCCYTN1VX",
   },
   {
     title: "Cyber Security 101",
     issuer: "TryHackMe",
     date: "Aug 2026",
     image: "",
-    verifyUrl: "",
+    verifyUrl: "https://tryhackme.com/certificate/THM-VXALYTB5F7",
   },
   {
     title: "Cybersecurity Job Simulation",
