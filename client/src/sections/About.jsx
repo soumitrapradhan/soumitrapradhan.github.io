@@ -1,13 +1,9 @@
-import { GraduationCap, Crosshair, BookOpen, Target } from "lucide-react";
+import { Crosshair, BookOpen, Target } from "lucide-react";
 import SectionHeading from "../components/SectionHeading.jsx";
 import Reveal from "../components/Reveal.jsx";
 
 const cards = [
-  {
-    Icon: GraduationCap,
-    title: "Education",
-    lines: ["B.Tech in Computer Science and Engineering (Cybersecurity)", "Haldia Institute of Technology"],
-  },
+  
   {
     Icon: Crosshair,
     title: "Career Interests",
