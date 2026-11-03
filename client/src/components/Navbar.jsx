@@ -30,7 +30,7 @@ export default function Navbar() {
 
   const go = (id) => {
     setOpen(false);
-    setTimeout(() => scrollToSection(id, navigate, pathname), open ? 300 : 0);
+    setTimeout(() => scrollToSection(id, navigate, pathname), open ? 350 : 0);
   };
 
   return (
