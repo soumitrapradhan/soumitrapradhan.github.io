@@ -24,7 +24,7 @@ export default function Home() {
       <Achievements />
       <Journey />
       <Blog />
-       <Hobbies />
+      <Hobbies />
       <Contact />
     </>
   );
