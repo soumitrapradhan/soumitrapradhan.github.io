@@ -5,7 +5,7 @@ export function scrollToSection(id, navigate, pathname) {
     const el = document.getElementById(id);
     if (!el) return;
     const top = id === "home" ? 0 : el.getBoundingClientRect().top + window.scrollY - 64;
-    const isMobile = window.matchMedia("(max-width: 1023px)").matches;
+    const isMobile = window.matchMedia("(max-width: 1279px)").matches;
     window.scrollTo({ top, behavior: isMobile ? "auto" : "smooth" });
   };
   if (pathname !== "/") {
