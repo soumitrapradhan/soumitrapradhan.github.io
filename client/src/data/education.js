@@ -10,7 +10,7 @@ export const education = [
     status: "Pursuing",
     grade: "",
     percentage: "",
-    logo: "",
+    logo: "/logos/hit.png",
   },
   {
     school: "Belda Gangadhar Academy",
