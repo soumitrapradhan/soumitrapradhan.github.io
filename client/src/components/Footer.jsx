@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
         <Social />
         <p className="text-xs text-muted/70">
-          © {new Date().getFullYear()} SOUMITRA PRADHAN. Designed & built by me.
+          © 2026 SOUMITRA PRADHAN. Designed & built by me.
         </p>
       </div>
     </footer>
