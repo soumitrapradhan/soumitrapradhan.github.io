@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
