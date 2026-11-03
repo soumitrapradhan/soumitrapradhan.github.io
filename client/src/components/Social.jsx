@@ -1,14 +1,16 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { BadgeCheck, Github, Linkedin, Mail, Terminal } from "lucide-react";
 import { site } from "../data/site.js";
 
 export default function Social({ className = "" }) {
   const items = [
     { href: site.linkedin, label: "LinkedIn", Icon: Linkedin },
     { href: site.github, label: "GitHub", Icon: Github },
+    { href: site.tryhackme, label: "TryHackMe", Icon: Terminal },
+    { href: site.credly, label: "Credly", Icon: BadgeCheck },
     { href: `mailto:${site.email}`, label: "Email", Icon: Mail },
   ];
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
+    <div className={`flex flex-wrap items-center gap-3 ${className}`}>
       {items.map(({ href, label, Icon }) => (
         <a
           key={label}
@@ -16,6 +18,7 @@ export default function Social({ className = "" }) {
           target={label === "Email" ? undefined : "_blank"}
           rel="noopener noreferrer"
           aria-label={label}
+          title={label}
           className="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/5 text-muted transition hover:-translate-y-0.5 hover:border-primary/60 hover:text-white"
         >
           <Icon size={18} />
