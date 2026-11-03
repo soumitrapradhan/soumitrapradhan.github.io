@@ -41,18 +41,18 @@ export default function Navbar() {
     >
       <nav className="container-x flex h-16 items-center justify-between" aria-label="Main navigation">
         <button onClick={() => go("home")} className="flex items-center gap-2" aria-label="Go to top">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-gradient font-display text-sm font-bold shadow-glow">
+          <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-gradient font-display text-sm font-bold text-black shadow-glow">
             {site.initials}
           </span>
           <span className="hidden font-display text-sm font-semibold sm:block">{site.name}</span>
         </button>
 
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className="hidden items-center gap-1 xl:flex">
           {navLinks.map((l) => (
             <li key={l.id}>
               <button
                 onClick={() => go(l.id)}
-                className={`rounded-lg px-3 py-2 text-sm transition ${
+                className={`rounded-lg px-2.5 py-2 text-sm transition ${
                   active === l.id && pathname === "/" ? "text-white" : "text-muted hover:text-white"
                 }`}
               >
@@ -70,7 +70,7 @@ export default function Navbar() {
             <Download size={16} /> Resume
           </a>
           <button
-            className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 lg:hidden"
+            className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 xl:hidden"
             onClick={() => setOpen(!open)}
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
@@ -86,7 +86,7 @@ export default function Navbar() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="overflow-hidden lg:hidden"
+            className="overflow-hidden xl:hidden"
           >
             <ul className="container-x flex flex-col gap-1 pb-5">
               {navLinks.map((l) => (
