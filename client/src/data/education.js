@@ -21,7 +21,7 @@ export const education = [
     status: "Completed",
     grade: "A",
     percentage: "79.4%",
-    
+    logo: "/logos/belda.png",
   },
   {
     school: "Jankapur High School (H.S.)",
@@ -32,6 +32,6 @@ export const education = [
     status: "Completed",
     grade: "A+",
     percentage: "84%",
-   
+   logo: "/logos/jankapur.png",
   },
 ];
