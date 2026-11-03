@@ -6,7 +6,7 @@ export const education = [
     location: "West Bengal, India",
     degree: "B.Tech in Computer Science and Engineering (Cyber Security)",
     start: "Aug 2024",
-    end: "Sep 2028",
+    end: "Present",
     status: "Pursuing",
     grade: "",
     percentage: "",
