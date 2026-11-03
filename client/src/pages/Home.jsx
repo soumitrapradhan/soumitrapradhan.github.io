@@ -8,6 +8,7 @@ import Certifications from "../sections/Certifications.jsx";
 import Achievements from "../sections/Achievements.jsx";
 import Journey from "../sections/Journey.jsx";
 import Blog from "../sections/Blog.jsx";
+import Hobbies from "../sections/Hobbies.jsx";
 import Contact from "../sections/Contact.jsx";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Achievements />
       <Journey />
       <Blog />
+       <Hobbies />
       <Contact />
     </>
   );
