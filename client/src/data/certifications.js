@@ -7,18 +7,18 @@ export const certifications = [
     issuer: "Cisco Networking Academy",
     date: "Sep 2026",
     image: "",
-    verifyUrl: "https://drive.google.com/file/d/1dydAGnzDlX4bhgEshtDmlQKZy76YIeTT/view?usp=sharing",
+    verifyUrl: "https://www.credly.com/badges/3b3e8f5f-07e1-42b4-b1e2-16be82f3e813/public_url",
     note: "Verified Credly badge",
-    badge:"https://www.credly.com/badges/3b3e8f5f-07e1-42b4-b1e2-16be82f3e813/public_url",
+    
   },
   {
     title: "Ethical Hacker",
     issuer: "Cisco Networking Academy",
     date: "Oct 2026",
     image: "",
-    verifyUrl: "https://drive.google.com/file/d/1IVUiL10icVhiyQ2yTPDpVAfHjAUiL_mH/view?usp=sharing",
+    verifyUrl: "https://www.credly.com/badges/42a88a27-113a-4f2a-99b8-e374f9be7c75/public_url",
      note: "Verified Credly badge",
-    Badge:"https://www.credly.com/badges/42a88a27-113a-4f2a-99b8-e374f9be7c75/public_url",
+    
   },
   {
     title: "Pre Security",
