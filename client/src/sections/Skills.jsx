@@ -1,17 +1,18 @@
-import { ShieldCheck, Wrench, Code2 } from "lucide-react";
+import { ShieldCheck, Wrench, Code2, Cpu } from "lucide-react";
 import SectionHeading from "../components/SectionHeading.jsx";
 import Reveal from "../components/Reveal.jsx";
 import { skillGroups } from "../data/skills.js";
 
-const icons = { ShieldCheck, Wrench, Code2 };
+const icons = { ShieldCheck, Wrench, Code2, Cpu };
+const LEVELS = { Beginner: 1, Intermediate: 2, Proficient: 3 };
 
 function Level({ level }) {
-  const filled = level === "Intermediate" ? 2 : 1;
+  const filled = LEVELS[level] || 1;
   return (
     <span className="flex items-center gap-2" title={`${level} level`}>
       <span className="flex gap-1" aria-hidden="true">
-        {[0, 1].map((i) => (
-          <span key={i} className={`h-1.5 w-4 rounded-full ${i < filled ? "bg-brand-gradient" : "bg-white/10"}`} />
+        {[0, 1, 2].map((i) => (
+          <span key={i} className={`h-1.5 w-3.5 rounded-full ${i < filled ? "bg-brand-gradient" : "bg-white/10"}`} />
         ))}
       </span>
       <span className="text-[11px] text-muted">{level}</span>
@@ -28,11 +29,11 @@ export default function Skills() {
           title="Technical Skills"
           subtitle="Honest skill levels – always learning and improving."
         />
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-2">
           {skillGroups.map((group, gi) => {
             const Icon = icons[group.icon] || ShieldCheck;
             return (
-              <Reveal key={group.title} delay={gi * 0.1}>
+              <Reveal key={group.title} delay={(gi % 2) * 0.1}>
                 <div className="glass h-full p-6">
                   <div className="mb-5 flex items-center gap-3">
                     <span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-gradient">
