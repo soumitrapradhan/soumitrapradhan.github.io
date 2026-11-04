@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="mt-2 h-px w-40 bg-brand-gradient opacity-60" />
 
         <p className="font-mono text-xs text-muted">
-          <span className="text-primary">©</span>2026{" "}
+          <span className="text-primary">©</span> 2026 {" "}
           <span className="font-semibold text-gradient">SOUMITRA PRADHAN</span>
           <span className="text-muted/60"> · Designed &amp; Built by me.</span>
         </p>
