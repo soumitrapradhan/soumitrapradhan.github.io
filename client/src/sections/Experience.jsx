@@ -1,4 +1,4 @@
-import { Briefcase, CalendarDays, MapPin } from "lucide-react";
+import { Briefcase, CalendarDays, ExternalLink, MapPin } from "lucide-react";
 import SectionHeading from "../components/SectionHeading.jsx";
 import Reveal from "../components/Reveal.jsx";
 import { experience } from "../data/experience.js";
@@ -34,7 +34,7 @@ export default function Experience() {
                     {e.logo ? (
                       <img src={e.logo} alt={`${e.company} logo`} className="h-12 w-12 rounded-xl bg-white/10 object-contain p-1" />
                     ) : (
-                      <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-brand-gradient">
+                      <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-brand-gradient text-black">
                         <Briefcase size={22} />
                       </span>
                     )}
@@ -67,6 +67,17 @@ export default function Experience() {
                         </span>
                       ))}
                     </div>
+                  )}
+
+                  {e.certificate && (
+                    <a
+                      href={e.certificate}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-outline mt-5 !py-2"
+                    >
+                      <ExternalLink size={16} /> View Certificate
+                    </a>
                   )}
                 </div>
               </div>
