@@ -26,5 +26,7 @@ export const experience = [
     responsibilities: [],
     skills: [],
     tasks: [],
+  
+    certificate: "/certificates/iste-membership.jpg",
   },
 ];
