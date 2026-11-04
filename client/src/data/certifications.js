@@ -69,4 +69,11 @@ export const certifications = [
     image: "",
     verifyUrl: "https://drive.google.com/file/d/1TirOq-Uak_B9-iTEbuXa0THFzdibryNZ/view?usp=sharing",
   },
+  {
+    title: "Student Member",
+    issuer: "The Indian Society for Technical Education (ISTE)",
+    date: "Mar 2026",
+    image: "/certificates/iste-membership.jpg",
+    verifyUrl: "",
+  },
 ];
