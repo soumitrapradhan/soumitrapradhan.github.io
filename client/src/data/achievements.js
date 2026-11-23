@@ -2,8 +2,8 @@
 export const achievements = [
   {
     icon: "Trophy",
-    title: "TryHackMe Gold League – 1st Place",
-    detail: "Won the weekly Gold League (Aug 2026) with 2604 points.",
+    title: "TryHackMe Gold League – 1st Place Worldwide",
+    detail: " Won the weekly Gold League (Aug 2026) with 2604 points.",
   },
   {
     icon: "Globe2",
