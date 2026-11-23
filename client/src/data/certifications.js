@@ -39,7 +39,7 @@ export const certifications = [
     issuer: "Mastercard",
     date: "",
     image: "",
-    verifyUrl: "https://drive.google.com/file/d/16tppIwQ5eW7mofYsCuLq_24swtdCrLx1/view?usp=sharing",
+    verifyUrl: "/certificates/mastercrd.jpg",
   },
   {
     title: "Fundamentals of Information Security",
