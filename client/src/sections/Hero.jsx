@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Download, FolderGit2, Send } from "lucide-react";
+import { Eye, FolderGit2, Send } from "lucide-react";
 import { site } from "../data/site.js";
 import { scrollToSection } from "../lib/scroll.js";
 import Social from "../components/Social.jsx";
@@ -39,8 +39,8 @@ export default function Hero() {
             <button onClick={() => go("projects")} className="btn-primary">
               <FolderGit2 size={18} /> View My Projects
             </button>
-            <a href={site.resume} download className="btn-outline">
-              <Download size={18} /> Download Resume
+           <a href={site.resume} target="_blank" rel="noopener noreferrer" className="btn-outline">
+              <Eye size={18} /> View Resume
             </a>
             <button onClick={() => go("contact")} className="btn-outline">
               <Send size={18} /> Contact Me
