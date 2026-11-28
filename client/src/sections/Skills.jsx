@@ -7,17 +7,7 @@ const icons = { ShieldCheck, Wrench, Code2, Cpu };
 const LEVELS = { Beginner: 1, Intermediate: 2, Proficient: 3 };
 
 function Level({ level }) {
-  const filled = LEVELS[level] || 1;
-  return (
-    <span className="flex items-center gap-2" title={`${level} level`}>
-      <span className="flex gap-1" aria-hidden="true">
-        {[0, 1, 2].map((i) => (
-          <span key={i} className={`h-1.5 w-3.5 rounded-full ${i < filled ? "bg-brand-gradient" : "bg-white/10"}`} />
-        ))}
-      </span>
-      <span className="text-[11px] text-muted">{level}</span>
-    </span>
-  );
+  return <span className="text-[11px] text-muted">{level}</span>;
 }
 
 export default function Skills() {
