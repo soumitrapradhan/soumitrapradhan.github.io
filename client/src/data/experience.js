@@ -3,7 +3,7 @@
 export const experience = [
   {
     company: "IqraSec Academy",
-    logo: "", // e.g. "/logos/iqrasec.png" (put the file in client/public/logos)
+    logo: "/logos/iqrasec.png", // e.g. "/logos/iqrasec.png" (put the file in client/public/logos)
     title: "Cybersecurity Scripting & Automation Intern",
     duration: "Sep 2026 – Present",
     length: "1 Month",
@@ -16,7 +16,7 @@ export const experience = [
   },
   {
     company: "The Indian Society for Technical Education (ISTE)",
-    logo: "", // e.g. "/logos/iste.png"
+    logo: "/logos/iste.png", // e.g. "/logos/iste.png"
     title: "Student Member",
     duration: "Mar 2026 – Mar 2029",
     length: "3 Years",
